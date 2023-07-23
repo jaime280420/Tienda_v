@@ -21,7 +21,7 @@ public class CategoriaController {
 
     @Autowired
     CategoriaService categoriaService;
-    
+
     @Autowired
     private FirebaseStorageServiceImpl firebaseStorageService;
 
@@ -39,8 +39,6 @@ public class CategoriaController {
     public String categoriaNuevo(Categoria categoria) {
         return "/categoria/modifica";
     }
-
-    
 
     @PostMapping("/guardar")
     public String categoriaGuardar(Categoria categoria,
